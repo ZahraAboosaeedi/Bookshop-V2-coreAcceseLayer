@@ -1,0 +1,16 @@
+E:\term7\Enternet\Project\Bookshop\visual\BookShop.Core\bin\Debug\netcoreapp3.1\BookShop.Core.deps.json
+E:\term7\Enternet\Project\Bookshop\visual\BookShop.Core\bin\Debug\netcoreapp3.1\BookShop.Core.runtimeconfig.json
+E:\term7\Enternet\Project\Bookshop\visual\BookShop.Core\bin\Debug\netcoreapp3.1\BookShop.Core.runtimeconfig.dev.json
+E:\term7\Enternet\Project\Bookshop\visual\BookShop.Core\bin\Debug\netcoreapp3.1\BookShop.Core.dll
+E:\term7\Enternet\Project\Bookshop\visual\BookShop.Core\bin\Debug\netcoreapp3.1\BookShop.Core.pdb
+E:\term7\Enternet\Project\Bookshop\visual\BookShop.Core\bin\Debug\netcoreapp3.1\BookShop.DataAccessLayer.dll
+E:\term7\Enternet\Project\Bookshop\visual\BookShop.Core\bin\Debug\netcoreapp3.1\BookShop.DataAccessLayer.pdb
+E:\term7\Enternet\Project\Bookshop\visual\BookShop.Core\obj\Debug\netcoreapp3.1\BookShop.Core.csproj.AssemblyReference.cache
+E:\term7\Enternet\Project\Bookshop\visual\BookShop.Core\obj\Debug\netcoreapp3.1\BookShop.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\term7\Enternet\Project\Bookshop\visual\BookShop.Core\obj\Debug\netcoreapp3.1\BookShop.Core.AssemblyInfoInputs.cache
+E:\term7\Enternet\Project\Bookshop\visual\BookShop.Core\obj\Debug\netcoreapp3.1\BookShop.Core.AssemblyInfo.cs
+E:\term7\Enternet\Project\Bookshop\visual\BookShop.Core\obj\Debug\netcoreapp3.1\BookShop.Core.csproj.CoreCompileInputs.cache
+E:\term7\Enternet\Project\Bookshop\visual\BookShop.Core\obj\Debug\netcoreapp3.1\BookShop.Core.csproj.CopyComplete
+E:\term7\Enternet\Project\Bookshop\visual\BookShop.Core\obj\Debug\netcoreapp3.1\BookShop.Core.dll
+E:\term7\Enternet\Project\Bookshop\visual\BookShop.Core\obj\Debug\netcoreapp3.1\BookShop.Core.pdb
+E:\term7\Enternet\Project\Bookshop\visual\BookShop.Core\obj\Debug\netcoreapp3.1\BookShop.Core.genruntimeconfig.cache
