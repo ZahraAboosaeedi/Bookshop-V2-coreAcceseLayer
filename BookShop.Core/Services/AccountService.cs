@@ -19,7 +19,7 @@ namespace BookShop.Core.Services
 
         public void AddUser(User user)
         {
-            _context.Users.Add(user);
+            _context.Users.AddAsync(user);
             _context.SaveChanges();
         }
 
@@ -28,9 +28,9 @@ namespace BookShop.Core.Services
             return _context.Users.Any(u => u.Mobile == MobileNumber);
         }
 
-        public int GetMinRole()
+        public int GetMaxRole()
         {
-            return _context.Roles.Min(r => r.Id);
+            return _context.Roles.Max(r => r.Id);
         }
     }
 }

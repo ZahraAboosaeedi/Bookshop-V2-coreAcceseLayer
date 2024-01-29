@@ -22,7 +22,7 @@ namespace BookShop.DataAccessLayer.Entities
         public string Mobile { get; set; }
 
          [Display(Name ="کلمه عبور")]
-         [MaxLength(20 , ErrorMessage ="مقدار {0} نباید بیشتر از {1} کاراکتر باشد")]
+         [MaxLength(100 , ErrorMessage ="مقدار {0} نباید بیشتر از {1} کاراکتر باشد")]
          [Required(ErrorMessage ="نباید بدون مقدار باشد")]
         public string Password { get; set; }
 

@@ -11,6 +11,6 @@ namespace BookShop.Core.Interfaces
         bool ExistsMobileNumbers(string MobileNumber);
         void AddUser(User user);
 
-        int GetMinRole();
+        int GetMaxRole();
     }
 }
