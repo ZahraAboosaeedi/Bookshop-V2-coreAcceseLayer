@@ -53,9 +53,32 @@ namespace BookShop.Core.Services
             return _context.Roles.Max(r => r.Id);
         }
 
+        public string GetUserActiveCode(string mobileNumber)
+        {
+            return _context.Users.FirstOrDefault(u => u.Mobile == mobileNumber).ActiveCode;
+        }
+
         public User LoginUser(string mobileNumber, string password)
         {
             return _context.Users.Include(u=>u.Role).FirstOrDefault(u => u.Mobile == mobileNumber && u.Password == password);
+        }
+
+        public bool ResetPassword(string code, string password)
+        {
+            User user = _context.Users.FirstOrDefault(u => u.ActiveCode==code);
+
+            if (user!=null)
+            {
+                user.Password = HashGenerators.MD5Encoding(password);
+                user.ActiveCode = CodeGenerators.ActiveCode();
+                _context.SaveChanges();
+
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
     }
 }
