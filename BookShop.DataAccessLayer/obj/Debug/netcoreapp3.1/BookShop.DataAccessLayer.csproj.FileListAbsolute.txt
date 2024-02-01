@@ -10,4 +10,3 @@ E:\term7\Enternet\Project\Bookshop\visual\BookShop.DataAccessLayer\obj\Debug\net
 E:\term7\Enternet\Project\Bookshop\visual\BookShop.DataAccessLayer\obj\Debug\netcoreapp3.1\BookShop.DataAccessLayer.dll
 E:\term7\Enternet\Project\Bookshop\visual\BookShop.DataAccessLayer\obj\Debug\netcoreapp3.1\BookShop.DataAccessLayer.pdb
 E:\term7\Enternet\Project\Bookshop\visual\BookShop.DataAccessLayer\obj\Debug\netcoreapp3.1\BookShop.DataAccessLayer.genruntimeconfig.cache
-E:\term7\Enternet\Project\Bookshop\visual\BookShop.DataAccessLayer\obj\Debug\netcoreapp3.1\BookShop.DataAccessLayer.csproj.AssemblyReference.cache

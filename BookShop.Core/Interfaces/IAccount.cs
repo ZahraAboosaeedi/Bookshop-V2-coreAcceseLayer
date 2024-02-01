@@ -12,5 +12,9 @@ namespace BookShop.Core.Interfaces
         void AddUser(User user);
 
         int GetMaxRole();
+
+        bool ActivateUser(string code);
+
+        User LoginUser(string mobileNumber, string password);
     }
 }

@@ -6,6 +6,7 @@ using Microsoft.EntityFrameworkCore;
 using BookShop.DataAccessLayer.Entities;
 using BookShop.DataAccessLayer.Context;
 using BookShop.Core.Interfaces;
+using BookShop.Core.Classes;
 namespace BookShop.Core.Services
 {
     public class AccountService: IAccount
@@ -15,6 +16,25 @@ namespace BookShop.Core.Services
         public AccountService(DataBaseContext context)
         {
             _context = context;
+        }
+
+        public bool ActivateUser(string code)
+        {
+            User user = _context.Users.FirstOrDefault(u => u.IsActive == false && u.ActiveCode == code);
+
+            if (user !=null)
+            {
+                user.IsActive = true;
+                user.ActiveCode = CodeGenerators.ActiveCode();
+
+                _context.SaveChanges();
+                return true;
+            }
+
+            else
+            {
+                return false;
+            }
         }
 
         public void AddUser(User user)
@@ -31,6 +51,11 @@ namespace BookShop.Core.Services
         public int GetMaxRole()
         {
             return _context.Roles.Max(r => r.Id);
+        }
+
+        public User LoginUser(string mobileNumber, string password)
+        {
+            return _context.Users.Include(u=>u.Role).FirstOrDefault(u => u.Mobile == mobileNumber && u.Password == password);
         }
     }
 }

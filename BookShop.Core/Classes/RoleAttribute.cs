@@ -11,12 +11,12 @@ using Microsoft.AspNetCore.Mvc.Filters;
 namespace BookShop.Core.Classes
 {
 
-    public class RuleAttribute : AuthorizeAttribute, IAuthorizationFilter
+    public class RoleAttribute : AuthorizeAttribute, IAuthorizationFilter
     {
         IUser _iuser;
         int _permissionID;
 
-        public RuleAttribute(int permissionID)
+        public RoleAttribute(int permissionID)
         {
             _permissionID = permissionID;
         }
@@ -31,16 +31,18 @@ namespace BookShop.Core.Classes
 
                 int roleID = _iuser.GetUserRole(username);
 
+
+
                 if (!_iuser.ExistsPermission(_permissionID, roleID))
                 {
-                    //Login Again:)
+                    context.Result = new RedirectResult("/Accounts/Login");
                 }
 
 
             }
             else
             {
-                //Login Again:)
+                context.Result = new RedirectResult("/Accounts/Login");
             }
         }
     }
